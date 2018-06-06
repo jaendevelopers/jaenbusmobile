@@ -1,0 +1,8 @@
+page-info-parada {
+    .item-md {
+        padding-left: 0px;
+   }
+   .item-md ion-icon[item-start] + .item-inner{
+       margin-left: 5px;
+   }
+}

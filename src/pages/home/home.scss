@@ -1,0 +1,19 @@
+page-home {
+    ion-avatar{
+        margin-bottom: 0px !important;
+        margin-right: 3px !important;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    [padding] h2:first-child {
+        margin-top: 0 !important
+    }
+    .item-md h2 {
+        margin:0 0!important
+    }
+    .item-md {
+         padding-left: 0px;
+    }
+}

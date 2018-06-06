@@ -1,0 +1,5 @@
+<ion-tabs>
+    <ion-tab [root]="paradasRoot" [rootParams]="idLinea" tabTitle="Paradas" tabIcon="pin"></ion-tab>
+    <ion-tab [root]="mapaRoot" [rootParams]="idLinea" [enabled]=false tabTitle="Mapa (Próximamente)" tabIcon="map"></ion-tab>
+    <ion-tab [root]="horarioRoot" [enabled]=false [rootParams]="idLinea" tabTitle="Horario (Próximamente)" tabIcon="clock"></ion-tab>
+</ion-tabs>

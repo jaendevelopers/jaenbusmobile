@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="navbarcolor">
+    <ion-title text-center>
+      JaénBus
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+
+  <ion-list>
+    <ion-item  (click)="goToParada(linea.idlinea)" *ngFor="let linea of lineas">
+      <ion-avatar item-start [ngStyle]="{'border-bottom': '5px solid '+linea.colorLinea}">
+        <h1>{{linea.idlinea}}</h1>
+      </ion-avatar>
+      <h2>{{linea.nombrelinea}}</h2>     
+     
+    </ion-item>
+  </ion-list>
+</ion-content>
