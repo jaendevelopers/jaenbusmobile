@@ -31,8 +31,8 @@ export class ParadasPage {
     )
   }
 
-  abrirInfoParada(idparada:any) {
-    let infoParadaModal = this.modalCtrl.create(InfoParadaPage);
+  abrirInfoParada(iDParada:any) {
+    let infoParadaModal = this.modalCtrl.create(InfoParadaPage, {iDParada: iDParada});
     infoParadaModal.present();
   }
   

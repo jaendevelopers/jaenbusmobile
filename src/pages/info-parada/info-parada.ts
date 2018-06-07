@@ -19,7 +19,8 @@ export class InfoParadaPage {
  infoParada: any;
 
   constructor(public navCtrl: NavController,public apiRest: ApiRestProvider, public navParams: NavParams,public viewCtrl: ViewController) {
-    apiRest.getInfoParada(17).subscribe(
+    let iDParada:number = navParams.get('iDParada');
+    apiRest.getInfoParada(iDParada).subscribe(
       (data)=>{
         this.infoParada = data;
       }
