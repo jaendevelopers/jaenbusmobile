@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, Platform } from 'ionic-angular';
 import { ApiRestProvider } from '../../providers/api-rest/api-rest';
 import { InfoParadaPage } from "../info-parada/info-parada";
 
@@ -21,8 +21,11 @@ export class ParadasPage {
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public apiRest: ApiRestProvider,
-    public modalCtrl: ModalController) {
+    public modalCtrl: ModalController, platform: Platform) {
+     
+      
     this.idLinea = this.navParams.get('idLinea');
+    
     this.apiRest.getParadas(this.idLinea).subscribe(
       (data) => {
         console.log(data)

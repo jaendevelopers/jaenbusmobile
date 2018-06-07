@@ -9,8 +9,8 @@ import { AppMinimize } from '@ionic-native/app-minimize'
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ParadaPage } from '../pages/parada/parada';
+import { InfoParadaPage } from '../pages/info-parada/info-parada';
 import { ApiRestProvider } from '../providers/api-rest/api-rest';
-import { InfoParadaPage } from "../pages/info-parada/info-parada";
 
 @NgModule({
   declarations: [
